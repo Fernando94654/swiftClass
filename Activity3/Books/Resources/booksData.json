@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Frankenstein",
+        "title": "Frankenstein; or, The Modern Prometheus",
+        "author": "Mary Shelley",
+        "year": 1818,
+        "description": "A young scientist, Victor Frankenstein, brings a creature to life and then abandons it. The novel explores ambition, responsibility, and what it means to be human, and is often called the first science fiction novel.",
+        "infoURL": "https://en.wikipedia.org/wiki/Frankenstein",
+        "imageName": [
+            "Frankenstein",
+            "Frankenstein2",
+            "Frankenstein3"
+        ]
+    },
+    {
+        "name": "Alice's Adventures in Wonderland",
+        "title": "Alice's Adventures in Wonderland",
+        "author": "Lewis Carroll",
+        "year": 1865,
+        "description": "Alice follows a white rabbit down a rabbit hole and finds a strange world of talking animals, playing cards, and nonsense logic. It is one of the best known works of children's literature.",
+        "infoURL": "https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland",
+        "imageName": [
+            "AliceInWonderland",
+            "AliceInWonderland2",
+            "AliceInWonderland3"
+        ]
+    },
+    {
+        "name": "Dracula",
+        "title": "Dracula",
+        "author": "Bram Stoker",
+        "year": 1897,
+        "description": "Told through letters and diary entries, Dracula follows a group of friends who fight the vampire Count Dracula as he moves from Transylvania to England. It shaped the modern vampire story.",
+        "infoURL": "https://en.wikipedia.org/wiki/Dracula",
+        "imageName": [
+            "Dracula",
+            "Dracula2",
+            "Dracula3"
+        ]
+    },
+    {
+        "name": "Moby-Dick",
+        "title": "Moby-Dick; or, The Whale",
+        "author": "Herman Melville",
+        "year": 1851,
+        "description": "Captain Ahab leads the whaling ship Pequod on an obsessive hunt for the white whale that took his leg. Narrated by Ishmael, it is a story of revenge, fate, and the sea.",
+        "infoURL": "https://en.wikipedia.org/wiki/Moby-Dick",
+        "imageName": [
+            "MobyDick",
+            "MobyDick2",
+            "MobyDick3"
+        ]
+    },
+    {
+        "name": "Pride and Prejudice",
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "year": 1813,
+        "description": "Elizabeth Bennet and the proud Mr. Darcy misjudge each other before they learn to see past first impressions. A witty look at class, marriage, and manners in Regency England.",
+        "infoURL": "https://en.wikipedia.org/wiki/Pride_and_Prejudice",
+        "imageName": [
+            "PrideAndPrejudice",
+            "PrideAndPrejudice2",
+            "PrideAndPrejudice3"
+        ]
+    }
+]
