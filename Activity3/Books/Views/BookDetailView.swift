@@ -33,11 +33,6 @@ struct BookDetailView: View {
                     }
                 }
                 
-                ForEach(book.imageName.dropFirst(), id: \.self) { name in
-                    Image(name)
-                        .resizable()
-                        .scaledToFit()
-                }
             }
             .padding()
         }

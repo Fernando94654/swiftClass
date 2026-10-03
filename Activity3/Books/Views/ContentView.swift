@@ -1,6 +1,5 @@
 import SwiftUI
 
-// Clean Code: Single Responsibility - this view only lays out the list and navigation
 struct ContentView: View {
     
     @State private var bookVM = BookViewModel()
