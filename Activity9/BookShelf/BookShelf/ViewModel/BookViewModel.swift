@@ -2,13 +2,11 @@ import Foundation
 import Observation
 import SwiftData
 
-// Clean Code: single responsibility - keeps the list and does create, update and delete
 @MainActor
 @Observable
 class BookViewModel {
     var books: [Book] = []
 
-    // The context comes from the View (@Environment), which gets it from the App
     private var context: ModelContext?
 
     func setContext(_ context: ModelContext) {
@@ -22,7 +20,6 @@ class BookViewModel {
         books = (try? context.fetch(descriptor)) ?? []
     }
 
-    /// The titles of the books with that reading status, used by the model's library tool
     func titles(isRead: Bool) -> [String] {
         books.filter { $0.isRead == isRead }.map(\.title)
     }
@@ -66,7 +63,6 @@ class BookViewModel {
         do {
             try context.save()
         } catch {
-            // Undo the unsaved changes so the list matches the database
             context.rollback()
             throw BookError.saveFailed
         }

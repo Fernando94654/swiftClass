@@ -1,6 +1,5 @@
 import FoundationModels
 
-/// What Apple Intelligence must generate for a book
 @Generable(description: "A short summary of a book and a reason to read it")
 struct BookSuggestion {
     @Guide(description: "What the book is about, in one or two sentences. Under 40 words.")

@@ -2,7 +2,6 @@ import Foundation
 import FoundationModels
 import Observation
 
-// Clean Code: single responsibility - this class only asks the model for a recommendation
 @MainActor
 @Observable
 class RecommendationViewModel {
@@ -32,7 +31,6 @@ class RecommendationViewModel {
             let session = LanguageModelSession(tools: [LibraryTool(viewModel: viewModel)],
                                                instructions: instructions)
             let prompt = Prompt { "Recommend the next book for me." }
-            // Each snapshot has the fields generated so far
             for try await snapshot in session.streamResponse(to: prompt, generating: BookRecommendation.self) {
                 recommendation = snapshot.content
             }

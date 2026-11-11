@@ -1,7 +1,6 @@
 import Foundation
 import FoundationModels
 
-// Tool calling: the model decides when to call this to read the user's own library
 struct LibraryTool: Tool {
     let name = "readLibrary"
     let description = "Returns the titles of the books in the user's library, read or not read yet"

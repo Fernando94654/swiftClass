@@ -43,7 +43,6 @@ Facts (sources at the end):
 Key code:
 
 ```swift
-// Tool calling
 struct LibraryTool: Tool {
     let name = "readLibrary"
     let description = "Returns the titles of the books in the user's library, read or not read yet"
@@ -60,7 +59,6 @@ struct LibraryTool: Tool {
     }
 }
 
-// Streaming
 for try await snapshot in session.streamResponse(to: prompt, generating: BookRecommendation.self) {
     recommendation = snapshot.content
 }

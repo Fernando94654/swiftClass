@@ -1,6 +1,5 @@
 import FoundationModels
 
-/// What Apple Intelligence must generate when it recommends a book
 @Generable(description: "A book recommendation for the user")
 struct BookRecommendation {
     @Guide(description: "The title of the recommended book")

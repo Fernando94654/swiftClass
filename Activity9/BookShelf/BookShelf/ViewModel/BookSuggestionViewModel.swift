@@ -2,11 +2,9 @@ import Foundation
 import FoundationModels
 import Observation
 
-// Clean Code: single responsibility - this class only asks the model for a book summary
 @MainActor
 @Observable
 class BookSuggestionViewModel {
-    /// The summary written so far, it grows while the model streams the answer
     private(set) var suggestion = ""
     private(set) var isLoading = false
     private(set) var errorMessage: String?
@@ -16,7 +14,6 @@ class BookSuggestionViewModel {
         If you don't know the book, say so instead of inventing details.
         """)
 
-    /// Loads the model into memory before the first request
     func prewarm() {
         session.prewarm()
     }
@@ -34,7 +31,6 @@ class BookSuggestionViewModel {
 
         do {
             let prompt = Prompt { "Book: \(title). Author: \(author.isEmpty ? "unknown" : author)." }
-            // A low temperature keeps the summary factual
             let stream = session.streamResponse(to: prompt,
                                                 generating: BookSuggestion.self,
                                                 options: GenerationOptions(temperature: 0.3))

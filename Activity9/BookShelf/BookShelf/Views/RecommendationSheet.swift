@@ -39,7 +39,6 @@ struct RecommendationSheet: View {
                     .font(.headline)
                     .foregroundStyle(.secondary)
                 Text(recommendation.reason ?? "")
-                // Transparency: says it is AI generated and what it is based on
                 Label("Suggested by Apple Intelligence, based on your library", systemImage: "sparkles")
                     .font(.footnote)
                     .foregroundStyle(.secondary)

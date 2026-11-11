@@ -7,7 +7,6 @@ struct BookShelfApp: App {
         WindowGroup {
             ContentView()
         }
-        // Creates the database and shares it with every screen
         .modelContainer(for: Book.self)
     }
 }

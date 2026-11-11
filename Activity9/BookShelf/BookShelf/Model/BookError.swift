@@ -1,6 +1,5 @@
 import Foundation
 
-// Clean Code: error handling - every error has a message the user can read
 enum BookError: LocalizedError, Equatable {
     case invalidTitle
     case saveFailed

@@ -1,8 +1,6 @@
 import FoundationModels
 
-// Clean Code: DRY - both Foundation Models features share this message
 extension SystemLanguageModel {
-    /// A readable message when the model can't be used, or nil when it is ready
     var unavailableMessage: String? {
         switch availability {
         case .available:

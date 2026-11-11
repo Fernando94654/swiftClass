@@ -1,7 +1,6 @@
 import SwiftUI
 import SwiftData
 
-// Clean Code: single responsibility - this view only shows the list and asks the ViewModel to change it
 struct ContentView: View {
     @Environment(\.modelContext) private var context
     @State private var viewModel = BookViewModel()

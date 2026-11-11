@@ -1,6 +1,5 @@
 import SwiftUI
 
-// Clean Code: DRY - one form for adding (book is nil) and editing (book has a value)
 struct BookFormSheet: View {
     @Environment(\.dismiss) private var dismiss
     let viewModel: BookViewModel
@@ -34,7 +33,6 @@ struct BookFormSheet: View {
                         Text(message)
                             .foregroundStyle(.red)
                     } else if !suggestionViewModel.suggestion.isEmpty {
-                        // Transparency: the user is told the text is AI generated
                         Text("Written with Apple Intelligence. Check it before you save.")
                     }
                 }
@@ -58,7 +56,6 @@ struct BookFormSheet: View {
             .onAppear(perform: copyBookIntoForm)
             .task { suggestionViewModel.prewarm() }
             .onChange(of: suggestionViewModel.suggestion) { _, newSuggestion in
-                // The summary fills in while the model is still writing
                 if !newSuggestion.isEmpty { summary = newSuggestion }
             }
         }
@@ -79,7 +76,6 @@ struct BookFormSheet: View {
         .disabled(!Book.isValidTitle(title) || suggestionViewModel.isLoading)
     }
 
-    /// Copies the book into the form, so Cancel really cancels
     private func copyBookIntoForm() {
         guard let book else { return }
         title = book.title

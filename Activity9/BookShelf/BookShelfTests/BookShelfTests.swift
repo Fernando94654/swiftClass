@@ -5,7 +5,6 @@ import SwiftData
 @MainActor
 struct BookShelfTests {
 
-    /// A view model with a new fake database in memory, so a test never touches real data
     private func makeViewModel() throws -> BookViewModel {
         let container = try ModelContainer(for: Book.self,
                                            configurations: ModelConfiguration(isStoredInMemoryOnly: true))
