@@ -1,0 +1,37 @@
+[
+    {
+        "artist": "Vincent van Gogh",
+        "title": "The Bedroom",
+        "description": "Vincent van Gogh so highly esteemed his bedroom painting that he made three distinct versions: the first, now in the collection of the Van Gogh Museum, Amsterdam; the second, belonging to the Art Institute of Chicago, painted a year later on the same scale and almost identical; and a third, smaller canvas in the collection of the Musée d’Orsay, Paris, which he made as a gift for his mother and sister. Van Gogh conceived the first Bedroom in October 1888, a month after he moved into his “Yellow House” in Arles, France. This moment marked the first time the artist had a home of his own, and he had immediately and enthusiastically set about decorating, painting a suite of canvases to fill the walls. Completely exhausted from the effort, he spent two-and-a-half days in bed and was then inspired to create a painting of his bedroom. As he wrote to his brother Theo, “It amused me enormously doing this bare interior. With a simplicity à la Seurat. In ﬂat tints, but coarsely brushed in full impasto, the walls pale lilac, the ﬂoor in a broken and faded red, the chairs and the bed chrome yellow, the pillows and the sheet very pale lemon green, the bedspread blood-red, the dressing-table orange, the washbasin blue, the window green. I had wished to express utter repose with all these very different tones.” Although the picture symbolized relaxation and peace to the artist, to our eyes the canvas seems to teem with nervous energy, instability, and turmoil, an effect heightened by the sharply receding perspective.",
+        "id": 1,
+        "imageName": "The_Bedroom"
+    },
+    {
+        "artist": "Georges Seurat",
+        "title": "A Sunday on La Grande Jatte",
+        "description": "In his best-known and largest painting, Georges Seurat depicted people from different social classes strolling and relaxing in a park just west of Paris on La Grande Jatte, an island in the Seine River. Although he took his subject from modern life, Seurat sought to evoke the sense of timelessness associated with ancient art, especially Egyptian and Greek sculpture. He once wrote, “I want to make modern people, in their essential traits, move about as they do on those friezes, and place them on canvases organized by harmonies of color.",
+        "id": 2,
+        "imageName": "A_Sunday_on_La_Grande_Jatte"
+    },
+    {
+        "artist": "Claude Monet",
+        "title": "Water Lilies",
+        "description": "'One instant, one aspect of nature contains it all,' said Claude Monet, referring to his late masterpieces, the water landscapes that he produced at his home in Giverny between 1897 and his death in 1926. These works replaced the varied contemporary subjects he had painted from the 1870s through the 1890s with a single, timeless motif—water lilies. The focal point of these paintings was the artist’s beloved ﬂower garden, which featured a water garden and a smaller pond spanned by a Japanese footbridge. In his first water-lily series (1897–99), Monet painted the pond environment, with its plants, bridge, and trees neatly divided by a fixed horizon. Over time, the artist became less and less concerned with conventional pictorial space. By the time he painted Water Lilies, which comes from his third group of these works, he had dispensed with the horizon line altogether. In this spatially ambiguous canvas, the artist looked down, focusing solely on the surface of the pond, with its cluster of vegetation ﬂoating amid the reﬂection of sky and trees. Monet thus created the image of a horizontal surface on a vertical one.",
+        "id": 3,
+        "imageName": "Water_Lilies"
+    },
+    {
+        "artist": "Claude Monet",
+        "title": "Water Lily Pond",
+        "description": "In 1893, three years after buying property at Giverny, Claude Monet began transforming the marshy ground behind his home into a pond, on the narrow end of which he built a Japanese-style wood bridge. Adding both exotic and domestic plantings, including his famous water lilies, the artist created the garden that would be one of his principal subjects for the rest of his life. Water Lily Pond was among the 18 similar versions of the motif that he made in 1899–1900; their common theme was the mingling of the lilies with reflections of other vegetation on the pool’s surface.",
+        "id": 4,
+        "imageName": "Water_Lily_Pond"
+    },
+    {
+        "artist": "Paul Cezannec",
+        "title": "The Basket of Apples",
+        "description": "Art, Paul Cézanne once claimed, is 'a harmony running parallel to nature,' not an imitation of nature. In his quest for underlying structure and composition, he recognized that the artist is not bound to represent real objects in real space. Thus, The Basket of Apples contains one of his signature tilted tables, an impossible rectangle with no right angles. On it, a basket of apples pitches forward from a slablike base, seemingly balanced by the bottle and the tablecloth’s thick, sculptural folds. The heavy modeling, solid brushstrokes, and glowing colors give the composition a density and dynamism that a more realistic still life could never possess. This painting, one of Cézanne’s rare signed works, was part of an important exhibition urged on the artist by the Parisian art dealer Ambroise Vollard in 1895. Since Cézanne had spent the majority of his career painting in isolation in his native Provence, this was the first opportunity in nearly twenty years for the public to see the work of the artist who is now hailed as the father of modern painting.",
+        "id": 5,
+        "imageName": "The_Basket_of_Apples"
+    }
+]
