@@ -6,10 +6,11 @@ struct BookRowView: View {
     
     var body: some View {
         HStack {
-            Image(book.imageName)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 100)
+            if let first = book.imageName {
+                Image(first).resizable().scaledToFit()
+            } else {
+                Image(systemName: "book.closed").resizable().scaledToFit()
+            }
             
             VStack(alignment: .leading) {
                 Text(book.title)

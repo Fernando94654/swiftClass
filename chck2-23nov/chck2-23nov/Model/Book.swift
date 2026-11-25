@@ -6,7 +6,7 @@ struct Book : Identifiable, Decodable {
     var author: String
     var synopsis: String
     var category : String
-    var imageName : String
+    var imageName : String?
     var copies: Int
     
     enum CodingKeys: String, CodingKey {

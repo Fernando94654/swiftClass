@@ -13,9 +13,11 @@ struct BookDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 12) {
                 ZStack(alignment: .bottom) {
-                    Image(book.imageName)
-                        .resizable()
-                        .scaledToFit()
+                    if let first = book.imageName {
+                        Image(first).resizable().scaledToFit()
+                    } else {
+                        Image(systemName: "book.closed").resizable().scaledToFit()
+                    }
                     
                     Text(book.title)
                         .font(.headline)

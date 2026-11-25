@@ -19,6 +19,22 @@ struct AddBookSheet: View {
     @State private var imageName: String = ""
     
     var body: some View {
-        Text("Hello, World!")
+        NavigationStack {
+            Form {
+                TextField("Title", text: $title)
+                TextField("Author", text: $author)
+                Stepper("Copies:\(copies)", value: $copies, in: 0...100)
+                TextField("Description", text: $synopsis)
+            }
+            .navigationTitle("New Book")
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Save") {
+                        bookVM.addBook(title: title, author: author, synopsis: synopsis, category: category, copies: copies, imageName: imageName)
+                        dismiss()
+                    }
+                }
+            }
+        }
     }
 }
